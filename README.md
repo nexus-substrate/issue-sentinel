@@ -1,6 +1,6 @@
 # issue-sentinel
 
-Security pipeline E2E tester for [nexus-agents](https://github.com/williamzujkowski/nexus-agents). Validates `issue_triage` trust classification and injection detection.
+Security pipeline E2E tester for [nexus-agents](https://github.com/nexus-substrate/nexus-agents). Validates `issue_triage` trust classification and injection detection.
 
 ## Quick start
 

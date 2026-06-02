@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/williamzujkowski/issue-sentinel.git"
+    "url": "https://github.com/nexus-substrate/issue-sentinel.git"
   },
   "keywords": ["security", "triage", "mcp", "nexus-agents", "e2e-test"],
   "engines": { "node": ">=22" },
