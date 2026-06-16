@@ -134,6 +134,7 @@ export const ERROR_INVALID_URL: SyntheticIssue = {
   expectedTier: '3',
   expectedActions: [],
   expectsInjectionDetection: false,
+  expectedErrorPattern: /invalid|url|parse/i,
   description: 'Should return an error, not a triage result.',
 };
 
@@ -144,6 +145,7 @@ export const ERROR_MISSING_TOKEN: SyntheticIssue = {
   expectedTier: '3',
   expectedActions: [],
   expectsInjectionDetection: false,
+  expectedErrorPattern: /token|auth|GITHUB_TOKEN/i,
   description: 'Should return auth error when no token is configured.',
 };
 

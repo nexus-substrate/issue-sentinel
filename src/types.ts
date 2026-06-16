@@ -101,6 +101,13 @@ export interface SyntheticIssue {
   readonly expectedActions: readonly ActionType[];
   /** Whether injection should be detected. */
   readonly expectsInjectionDetection: boolean;
+  /**
+   * For fixtures that expect the triage call to error out (e.g. invalid URL,
+   * missing token), the error message MUST match this pattern for the case to
+   * pass. Without it, any error — including an unrelated crash, timeout, or a
+   * down/misconfigured MCP server — would be scored as a false-green pass.
+   */
+  readonly expectedErrorPattern?: string | RegExp;
   /** Description of what this test validates. */
   readonly description: string;
 }
